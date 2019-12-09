@@ -209,6 +209,13 @@ export class NativeScriptRenderer extends Renderer2 {
         // TODO: handle this when we resolve routing and navigation.
     }
 
+    destroyNode = (node: NgView) => {
+        if (isLogEnabled()) {
+            traceLog(`NativeScriptRenderer.destroyNode: ${node}`);
+        }
+        this.viewUtil.destroyView(node);
+    }
+
     @profile
     setAttribute(view: NgView, name: string, value: string, namespace?: string) {
         if (isLogEnabled()) {

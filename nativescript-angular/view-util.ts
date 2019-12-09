@@ -287,9 +287,15 @@ export class ViewUtil {
 
         const viewClass = getViewClass(name);
         const view = <NgView>new viewClass();
+        (view as any).reusable = true;
         const ngView = this.setNgViewExtensions(view, name);
 
         return ngView;
+    }
+
+    public destroyView(view: NgView): void {
+        (view as any).reusable = false;
+        view._tearDownUI();
     }
 
     private ensureNgViewExtensions(view: View): NgView {
