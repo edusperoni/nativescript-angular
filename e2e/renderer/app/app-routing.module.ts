@@ -20,6 +20,7 @@ import { NgIfElseComponent } from "./ngifelse.component";
 import { NgIfThenElseComponent } from "./ngif-then-else.component";
 import { NgIfSubsequent } from "./ngif-subsequent.component";
 import { ContentViewComponent } from "./content-view.component";
+import { DetachReattachComponent } from "./detachreattach.component";
 
 export const routes = [
     {
@@ -112,6 +113,10 @@ export const routes = [
         path: "content-view",
         component: ContentViewComponent,
     },
+    {
+        path: "detach-reattach",
+        component: DetachReattachComponent,
+    },
 ];
 
 export const navigatableComponents = [
@@ -133,6 +138,7 @@ export const navigatableComponents = [
     NgIfThenElseComponent,
     NgIfSubsequent,
     ContentViewComponent,
+    DetachReattachComponent
 ];
 
 @NgModule({

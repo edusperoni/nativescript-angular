@@ -19,6 +19,7 @@ import { Component } from "@angular/core";
             <Button text="NgIf Then Else" [nsRouterLink]="['/ngif-then-else']"></Button>
             <Button text="NgIf Subsequent Ifs" [nsRouterLink]="['/ngif-subsequent']"></Button>
             <Button text="Content view" [nsRouterLink]="['/content-view']"></Button>
+            <Button text="Detach Reattach" [nsRouterLink]="['/detach-reattach']"></Button>
         </FlexboxLayout>
     `
 })
