@@ -63,7 +63,7 @@ export class ViewUtil {
         const extendedParent = this.ensureNgViewExtensions(parent);
         const extendedChild = this.ensureNgViewExtensions(child);
 
-        if (!previous) {
+        if (!previous && !next) {
             previous = extendedParent.lastChild;
         }
         this.addToQueue(extendedParent, extendedChild, previous, next);
