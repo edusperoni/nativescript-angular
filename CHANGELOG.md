@@ -1,3 +1,13 @@
+<a name="8.21.2"></a>
+## [8.21.2](https://github.com/NativeScript/nativescript-angular/compare/8.21.0...8.21.2) (2020-10-06)
+
+
+### Bug Fixes
+
+* *ngIf not preserving order ([7a7a06d](https://github.com/NativeScript/nativescript-angular/commit/7a7a06d))
+
+
+
 <a name="8.21.0"></a>
 ## 8.21.0 (2020-01-31)
 
